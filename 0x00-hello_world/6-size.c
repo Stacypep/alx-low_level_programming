@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Description: main - Calculate and print sizes
- * Return: 0 if Success.
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
