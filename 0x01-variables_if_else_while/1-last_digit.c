@@ -29,3 +29,4 @@ else if (lastnum < 6 && lastnum != 0)
 }
 return (0);
 }
+:%s/\s\+$//e
