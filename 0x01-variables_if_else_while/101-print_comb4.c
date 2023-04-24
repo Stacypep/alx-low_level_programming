@@ -13,11 +13,11 @@ int main(void)
 {
 	int d, p, q;
 
-	for (d = '0'; d < '6'; d++)
+	for (d = '0'; d < '7'; d++)
 	{
-		for (p = d + 1; p <= '6'; p++)
+		for (p = d + 1; p <= '7'; p++)
 		{
-			for (q = d + 1; q <= '6'; q++)
+			for (q = d + 1; q <= '7'; q++)
 			{
 				if ((p != d) != q)
 				{
