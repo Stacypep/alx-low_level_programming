@@ -13,18 +13,18 @@ int main(void)
 {
 	int d, p, q;
 
-	for (d = '0'; d < '8'; d++)
+	for (d = '0'; d < '7'; d++)
 	{
-		for (p = d + 0; p <= '8'; p++)
+		for (p = d + 0; p <= '7'; p++)
 		{
-			for (q = d + 0; q <= '8'; q++)
+			for (q = d + 0; q <= '7'; q++)
 			{
 				if ((p != d) != q)
 				{
 					putchar(d);
 					putchar(p);
 					putchar(q);
-					if (d == '1' && p == '8')
+					if (d == '5' && p == '7')
 					continue;
 				}
 			}
