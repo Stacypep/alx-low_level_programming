@@ -15,16 +15,16 @@ int main(void)
 
 	for (d = '0'; d < '6'; d++)
 	{
-		for (p = d + 0; p <= '6'; p++)
+		for (p = d + 1; p <= '6'; p++)
 		{
-			for (q = d + 0; q <= '6'; q++)
+			for (q = d + 1; q <= '6'; q++)
 			{
 				if ((p != d) != q)
 				{
 					putchar(d);
 					putchar(p);
 					putchar(q);
-					if (d == '5' && p == '6')
+					if (d == '5' && p == '7')
 					continue;
 				}
 			}
