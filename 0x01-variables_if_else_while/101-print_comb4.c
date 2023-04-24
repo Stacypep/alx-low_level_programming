@@ -24,7 +24,7 @@ int main(void)
 					putchar(d);
 					putchar(p);
 					putchar(q);
-					if (d == '5' && p == '7')
+					if (d == '6' && p == '7')
 					continue;
 				}
 			}
