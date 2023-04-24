@@ -17,14 +17,14 @@ int main(void)
 	{
 		for (p = d + 0; p <= '8'; p++)
 		{
-			for (q = d + 1; q <= '8'; q++)
+			for (q = d + 0; q <= '8'; q++)
 			{
 				if ((p != d) != q)
 				{
 					putchar(d);
 					putchar(p);
 					putchar(q);
-					if (d == '6' && p == '8')
+					if (d == '1' && p == '8')
 					continue;
 				}
 			}
