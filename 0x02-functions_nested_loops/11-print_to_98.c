@@ -7,7 +7,6 @@
  * @n: starting point
  *
  * Return: returns nothing
- *
  */
 
 void print_to_98(int n)
