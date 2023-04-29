@@ -1,16 +1,31 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_numbers - print 0-9
- * return: void
+ * print_number - prints numbers
+ *
+ * @n: number to be printed
  */
 
 void print_number(int n)
 {
-	for (c = '0'; c <= '9'; c++)
+	unsigned int n1 = 0;
+
+	if (n < 0)
 	{
-		_putchar(c);
+		n1 = -n;
+		_putchar('_');
 	}
-	_putchar('\n');
+	else
+	{
+		n1 = n;
+	}
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+		_putchar((n1 % 10) + '0');
 }
-	
+
+
+
