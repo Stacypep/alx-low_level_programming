@@ -19,7 +19,7 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("Fizz")
+			printf("Fizz");
 		}
 		else if (i % 5 == 0 && i % 3 != 0)
 		{
@@ -28,8 +28,8 @@ int main(void)
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf(" FizzBuzz");
-		}	
-		else if (i = 1)
+		}
+		else if (i != 100)
 		{
 			printf("%d", i);
 		}
@@ -38,5 +38,6 @@ int main(void)
 			printf(" %d", i);
 		}
 	}
+return (0);
 }
 
