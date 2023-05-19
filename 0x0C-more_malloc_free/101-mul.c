@@ -51,7 +51,7 @@ void errors(void)
  * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
- *
+ * _putchar: printing the output 
  * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
