@@ -1,25 +1,49 @@
-#include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
 
 /**
- * print_rev - prints a string in reverse, followed by a new line
- * @s: string to be printed
- *
- * Return: void
- */
-void print_rev(char *s)
-{
-	int k = 0;
+* new_dog - a function that creates a new dog
+* @name: a string 'name'
+* @age: a float 'age'
+* @owner: a string 'owner'
+* Return: returns a pointer to a struct
+*/
+dog_t *new_dog(char *name, float age, char *owner)
+{int i = 0, c = 0;
 
-	while (s[k] != '\0')
+dog_t *newDog;
+newDog = malloc(sizeof(dog_t));
+	if (newDog == NULL)
+		return (NULL);
+	newDog->age = age;
+	for (i = 0, c = 0; name[i] != '\0'; i++)
+		c++;
+	newDog->name = malloc(sizeof(char) * (c + 1));
+	if (newDog->name == NULL)
 	{
-		k++;
+		free(newDog);
+		return (NULL);
 	}
-
-	for (k -= 1; k >= 0; k--)
+	for (i = 0; 1 ; i++)
 	{
-		putchar(s[k]);
+		(*(newDog->name + i)) = name[i];
+		if (name[i] == '\0')
+			break;
 	}
-
-	putchar('\n');
+	for (i = 0, c = 0; owner[i] != '\0'; i++)
+		c++;
+	newDog->owner = malloc(sizeof(char) * (c + 1));
+	if (newDog->owner == NULL)
+	{
+		free(newDog);
+		free(newDog->name);
+		return (NULL);
+	}
+	for (i = 0; 1 ; i++)
+	{
+		(*(newDog->owner + i)) = owner[i];
+		if (owner[i] == '\0')
+			break;
+	}
+	return (newDog);
 }
